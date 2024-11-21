@@ -7,13 +7,13 @@ Uma ferramenta para modificar arquivos .VMT (Valve Material Type) em projetos de
 Substitui strings em arquivos .VMT de forma rápida e precisa, percorrendo TODAS as pastas e subpastas do diretório selecionado.
 
 📝 Exemplo Prático
-
+Você precisa alterar o caminho de varias texturas em vários arquivos .VMT onde será necessario altrar ```skins``` para ```skins_v2```
 Antes da Modificação:
 ```
 VertexLitGeneric
 {
-	"$basetexture" "fof_skins\players\arthur_morgan\noarms"
-	"$bumpmap"     "fof_skins\players\arthur_morgan\noarms_nm"
+	"$basetexture" "skins\players\arthur_morgan\noarms"
+	"$bumpmap"     "skins\players\arthur_morgan\noarms_nm"
 }
 ```
 
@@ -22,15 +22,15 @@ Depois da Modificação:
 ```
 VertexLitGeneric
 {
-	"$basetexture" "fof_skins_v2\players\arthur_morgan\noarms"
-	"$bumpmap"     "fof_skins_v2\players\arthur_morgan\noarms_nm"
+	"$basetexture" "skins_v2\players\arthur_morgan\noarms"
+	"$bumpmap"     "skins_v2\players\arthur_morgan\noarms_nm"
 }
 ```
 
 🔍 Como Funciona?
 - Selecione o diretório raiz
-- Insira a string original, exemplo: ```fof_skins```
-- Insira a nova string, exemplo: ```fof_skins_v2```
+- Insira a string original, exemplo: ```skins```
+- Insira a nova string, exemplo: ```skins_v2```
 - O script substituirá em:
    - Todos os arquivos .VMT
    - Em todas as pastas
@@ -51,8 +51,8 @@ VertexLitGeneric
 🚀 Como Usar
 1. Execute o script ou o arquivo executável
 2. Escolha o diretório raiz
-3. Digite fof_skins como string de busca
-4. Digite fof_skins_v2 como string de substituição
+3. Digite a string de busca
+4. Digite a string de substituição
 5. Clique em "Processar Arquivos VMT"
 
 ⚠️ Importante
